@@ -1,6 +1,5 @@
 FROM node:latest
-WORKDIR /usr/src/app
-COPY package*.json ./
+WORKDIR /app
+COPY  . .
 RUN npm install
-COPY . .
 CMD ["node", "index.js"]
